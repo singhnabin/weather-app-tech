@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 0 auto;
+  background-color: black;
+  color: aliceblue;
+}
+.search{
+  display: flex;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search>.MuiIconButton-root>.MuiIconButton-label>.MuiSvgIcon-root{
+  color: aliceblue !important;
+  font-size: 40px;
+  z-index: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mb-3>label{
+  font-size: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* #. */
+.search>input{
+  font-size: 30px;
+  border-radius: 50px;
+}
+.weather-card{
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 100%;
+  color: rgb(200, 83, 29) !important;
+}
+.card-title>h2{
+  font-size: 50px;
+  margin: 10px;
+  color: rgb(200, 83, 29) !important;
+
+}
+.card-title>h3{
+  font-size: 20px;
+  color: rgb(200, 83, 29)
+}
+.max-f{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.max-f>h1{
+  font-size: 60px;
+}
+.max-f>h3{
+  margin-left: 5px;
+}
+.weather-info{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.sun>h5{
+  margin: 2px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hum{
+  margin-left: 20px;
 }
